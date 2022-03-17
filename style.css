@@ -13,14 +13,35 @@ html {
 /* adjust typography defaults */
 body {
   margin: 1rem;
-  font-family: 'Coda', cursive;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   background-color: slategrey;
   color: white; 
 }
+
 h1 {
   font-family: 'Poppins', sans-serif;
 }
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#gameButtonArea > button {
+  width:200px;
+  height:200px;
+  margin:2px;
+}
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+    background: lightgreen;
+}
+
 /* images and videos max out at full width */
 img,
 video {
