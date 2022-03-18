@@ -9,9 +9,12 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
@@ -20,24 +23,50 @@
     <div class="container">
       <header>
         <h1>Light and Sound Memory Game</h1>
-        <p>Welcome to the game! Repeat back to the pattern by pressing buttons.</p>
+        <p>
+          Welcome to the game! Repeat back to the pattern by pressing buttons.
+        </p>
       </header>
     </div>
-    
+
     <!-- this is the start of content -->
-    
+
     <div class="container" id="controlArea">
       <span>
-        <button id="startBtn" onclick="startGame()">  Start  </button>
-        <button class="hidden" id="stopBtn" onclick="stopGame()">  Stop  </button>
+        <button id="startBtn" onclick="startGame()">Start</button>
+        <button class="hidden" id="stopBtn" onclick="stopGame()">Stop</button>
       </span>
+      <div class="countdown">
+        <span class="timer">0 </span>
+        <span>Second(s) </span>
+      </div>
     </div>
 
     <div class="button-container" id="gameButtonArea">
-      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
-      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
-      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
-      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+      <button
+        id="button1"
+        onclick="guess(1)"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="button2"
+        onclick="guess(2)"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="button3"
+        onclick="guess(3)"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="button4"
+        onclick="guess(4)"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone()"
+      ></button>
     </div>
   </body>
 </html>
