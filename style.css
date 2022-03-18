@@ -19,7 +19,7 @@ html {
 
 body {
   margin: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   line-height: 1.5;
   background: linear-gradient(
   to right,
@@ -30,13 +30,16 @@ body {
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 button {
+  font-family: 'Orbitron', sans-serif;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 12px 15px 20px rgba(46, 61, 73, 0.5);
+  border: none;
+
 }
 
 button:hover {
@@ -44,6 +47,7 @@ button:hover {
 }
 
 #gameButtonArea > button {
+  border-radius: 20px;
   width:200px;
   height:200px;
   margin:2px;
@@ -84,7 +88,7 @@ button:hover {
 }
 
 #button3:active, #button3.lit {
-    background:#EF7A85;
+    background:#e2373f;
 }
 
 #button4:active, #button4.lit {
