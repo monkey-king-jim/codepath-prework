@@ -18,6 +18,7 @@ function startGame(){
   // swap the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
+  playClueSequence();
 }
 
 function stopGame(){
