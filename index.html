@@ -22,7 +22,7 @@
   <body>
     <div class="container">
       <header>
-        <h1>Light and Sound Memory Game</h1>
+        <h1 >Light and Sound Memory Game</h1>
         <p>
           Welcome to the game! Repeat back to the pattern by pressing buttons.
         </p>
@@ -31,17 +31,22 @@
 
     <!-- this is the start of content -->
 
-    <div class="container" id="controlArea">
-      <div>
-        <span>
+    <div class="panel-container" id="controlArea">
+      <div class="countdown" style="flex: 40%">
+        <span style="color:black;" class="timer">10 </span>
+        <span style="color:black;">Second(s) </span>
+      </div>
+      <div style="flex: 40%">
+
           <button id="startBtn" onclick="startGame()">Start</button>
           <button class="hidden" id="stopBtn" onclick="stopGame()">Stop</button>
-        </span>
+
       </div>
-      <div class="countdown" style="display: inline-block; float: left;">
-        <span class="timer">0 </span>
-        <span>Second(s) </span>
+      <div class="level" >
+        <span style="color:black;" class="level">10 </span>
+        <span style="color:black;">Second(s) </span>
       </div>
+      
     </div>
 
     <div class="button-container" id="gameButtonArea">
