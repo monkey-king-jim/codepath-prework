@@ -14,6 +14,7 @@ html {
 .container {
   display: flex;
   justify-content: center;
+  
 }
 
 body {
@@ -35,6 +36,11 @@ h1 {
 button {
   padding: 10px;
   border-radius: 20px;
+  box-shadow: 12px 15px 20px rgba(46, 61, 73, 0.5);
+}
+
+button:hover {
+  transform: scale(1.02);
 }
 
 #gameButtonArea > button {
@@ -42,6 +48,7 @@ button {
   height:200px;
   margin:2px;
   cursor: pointer;
+  
 }
 
 .hidden {
@@ -59,7 +66,7 @@ button {
 }
 
 #button3 {
-    background: #FF90B3;
+    background: #fc6076;
 /*     opacity: .8; */
 }
 
