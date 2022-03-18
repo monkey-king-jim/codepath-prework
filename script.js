@@ -82,6 +82,7 @@ function playSingleClue(btn){
     lightButton(btn);
     playTone(btn,clueHoldTime);
     setTimeout(clearButton,clueHoldTime,btn);
+    
   }
 }
 
