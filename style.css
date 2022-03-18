@@ -51,14 +51,14 @@ button {
   font-family: 'Orbitron', sans-serif;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 12px 15px 20px rgba(46, 61, 73, 0.5);
+  box-shadow: 6px 8px 10px rgba(46, 61, 73, 0.4);
   border: none;
   cursor: pointer;
 
 }
 
 button:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 #gameButtonArea > button {
@@ -66,7 +66,7 @@ button:hover {
   width:200px;
   height:200px;
   margin: 20px 20px;
-  
+  box-shadow: 12px 15px 20px rgba(46, 61, 73, 0.4);
   
 }
 
