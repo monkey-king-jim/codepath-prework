@@ -11,6 +11,13 @@ html {
 }
 
 /* adjust typography defaults */
+.container {
+  display: flex;
+  height: 680px;
+  max-width: 660px;
+  justify-content: center;
+}
+
 body {
   margin: 1rem;
   font-family: 'Poppins', sans-serif;
