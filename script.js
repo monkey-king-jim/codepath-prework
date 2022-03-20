@@ -10,6 +10,8 @@ var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;  //must be between 0.0 and 1.0
 var guessCounter = 0;
+let timeCount = 10;
+let $timer = $('.timer');
 
 function startGame(){
     //initialize game variables
@@ -85,6 +87,13 @@ function playSingleClue(btn){
     
   }
 }
+
+function startTimer() {   
+  timeCountVar = setInterval(function () {
+      timeCount--;
+      $timer.html(timeCount);
+  }, 1000);
+};
 
 function playClueSequence(){
   guessCounter = 0;
