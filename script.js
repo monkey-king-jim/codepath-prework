@@ -12,6 +12,7 @@ var volume = 0.5;  //must be between 0.0 and 1.0
 var guessCounter = 0;
 let timeCount = 10;
 let $timer = $('.timer');
+let timeCountVar;
 
 function startGame(){
     //initialize game variables
@@ -79,6 +80,20 @@ function clearButton(btn){
   document.getElementById("button"+btn).classList.remove("lit")
 }
 
+function startTimer() {   
+  timeCountVar = setInterval(function () {
+      timeCount--;
+      $timer.html(timeCount);
+  }, 1000);
+};
+
+function resetTimer() {
+  timeCount = 10;
+  $timer.html(timeCount);
+
+  clearInterval(timeCountVar);
+};
+
 function playSingleClue(btn){
   if(gamePlaying){
     lightButton(btn);
@@ -88,12 +103,7 @@ function playSingleClue(btn){
   }
 }
 
-function startTimer() {   
-  timeCountVar = setInterval(function () {
-      timeCount--;
-      $timer.html(timeCount);
-  }, 1000);
-};
+
 
 function playClueSequence(){
   guessCounter = 0;
